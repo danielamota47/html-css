@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1> 
+    <p>Tenta aumentar e diminuir a janela do navegador para ver as imagens a adaptar-se</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+
+    <h1>Reproduzir áudio</h1>
+    <p>Vai ser colocado um áudio aqui, através da tag "audio" e os respetivos atributos, valores e "source"'s</p>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="audios/guanacast-33.mp3" type="audio/mpeg"> 
+        <source src="audios/guanacast-33.mp3" type="audio/ogg">
+        <source src="audios/guanacast-33.mp3" type="image/wav">
+        <p>Erro, clique para baixar o arquivo <a href="audios/guanacast-33.mp3" download="audios/guanacast-33.mp3" type="audio.mp3"></a> </p>
+    </audio>
+    <h1>Vídeos hospedados localmente</h1>
+    <p>Este vídeo está no meu servidor. Coloquei através da tag "video" e os respetivos atributos e source's</p>
+    <video width="500" poster="video/thumb.jpeg" controls>
+     <source src="video/Meu-Video.webm" type="video/webm">
+     <source src="video/meu-video.ogv" type="video/ogg">
+     <source src="video/meu-video.mp4" type="video/mp4">
+     <p>Erro</p>
+    </video>
+    <h1>Inserindo vídeos externos-do Youtube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/XjHVsGqkp6w?si=EeUEYW1oED0IXmFv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1>Inserindo vídeos externos-do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/29844795?h=f0a1764666" width="640" height="360" frameborder="0"      allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>
