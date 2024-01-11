@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronauta</title>
+    <style>
+        section#espaco {
+            height: 97vh;
+            background-color: black;
+            background-image: url(imagens/espaco.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+            margin: -10px;
+
+            position: relative;
+        }
+
+        article#astronauta > img {
+            height: 510px;
+            width: 500px;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <section id="espaco">
+        <article id="astronauta">
+            <img src="imagens/astronauta.png" alt="Astronauta">
+        </article>
+    </section>
+    
+</body>
+</html>
