@@ -26,6 +26,7 @@ html, body {
     font-family: var(--fonte1);
 }
 
+
 header {
     background: black;
     color: white;
@@ -61,6 +62,12 @@ section {
     line-height: 2em;
     font-family: var(--fonte3);
     font-size: 3vw;
+    font-style: italic;
+    font-weight: bold;
+}
+
+section > p {
+    padding-bottom: 1em;
 }
 
 section.normal {
@@ -71,13 +78,28 @@ section.normal {
 section.imagem {
     background-color: rgba(0, 0, 0, 0.568);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.459);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p{
-    background-color: rgba(0, 0, 0, 0.24);
+    background-color: rgba(0, 0, 0, 0.582);
     display: inline-block;
     padding: 10px;
+    text-shadow: 2px 2px 7px black;
 }
+
+section#imagem1 {
+    background-image: url(../pacote-d012/imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#imagem2 {
+    background-image: url(../pacote-d012/imagens/background002.jpg);
+    background-position: right center;
+}
+
 
 footer {
     background-color: black;
